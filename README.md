@@ -42,4 +42,10 @@ Add the following two lines to the bottom of the file
 #One-time password authentication via Google Authenticator
 auth required pam_google_authenticator.so
 ```
+### View Key
+
+Use the following command from the users home directory to show the secret key so that you may add another device manaually.
+
+`head -n 1 .google_authenticator`
+
 More info:  https://github.com/google/google-authenticator-libpam
